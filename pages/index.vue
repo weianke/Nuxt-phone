@@ -95,7 +95,7 @@
         ]
       }
     },
-    async asyncData({params,store}){
+    async asyncData({params, store}){
       //首页head信息
       let metaData = await axios(`${store.state.wordpressAPI}/NavigationMeta/get/1`);
       //banner数据动态获取
@@ -121,6 +121,10 @@
 			let indexProdList3 = await axios(`${store.state.wordpressAPI}/product/selectByPosition/3`);
       let indexProdList4 = await axios(`${store.state.wordpressAPI}/product/selectByPosition/4`);
       let indexProdList6 = await axios(`${store.state.wordpressAPI}/product/selectByPosition/97`);
+
+      let test = await axios('http://localhost:3000/mock/users');
+
+      console.log(test, 'test 跨域数据')
       
       return {
         metaData: metaData.data,

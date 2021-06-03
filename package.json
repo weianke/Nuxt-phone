@@ -20,6 +20,7 @@
     "start:prod": "pm2 start npm --name visneyphone -- run start"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/sitemap": "^0.1.1",
     "axios": "^0.18.0",
     "fs": "0.0.1-security",
@@ -29,6 +30,7 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@nuxtjs/proxy": "^2.1.0",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
